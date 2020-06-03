@@ -16,7 +16,14 @@ To setup a virtualenv follow these steps:
 * Run ```pip3 install -U pip virtualenv``` or ```pip install -U pip virtualenv``` based on the installation of pip (this command installs virtualenv globally)
 * Run ```virtualenv --system-site-packages -p python3 ./venv``` OR
 ```virtualenv --system-site-packages -p python ./venv``` based on the python version/installation that you are using
-* Activate the virtualenv using the ```./venv/Scripts/activate``` command.
+* Activate the virtualenv using the ```./venv/Scripts/activate``` command (Note: If the following message shows up:
+```You must source this script: $ source ./venv/Scripts/activate```
+Then just run ```source ./venv/Scripts/activate``` and it should work.)
+* Install the packages located in the ```requirements.txt``` file using the following command: ```pip install -r requirements.txt```
+* Run the app using: ```python src/main.py```
+
+### Note:
+User guide on how to freeze requirements: https://pip.pypa.io/en/stable/user_guide/#requirements-files
 
 ## License
 This project is license under the MIT License.
